@@ -1,0 +1,240 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar-brand{
+    font-weight: 500;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar{
+    background-color:rgb(221, 166, 216);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+/*
+#search{
+    background-color:rgb(121, 58, 180) ;
+    margin-top:-5px;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+*/
+
+
+.login-button{
+    background-color:rgb(121, 58, 180) ;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+
+}
+
+.login-button:hover{
+    background-color: blueviolet;
+}
+
+#btn {
+    border: none;
+    font-size: 1.25rem;
+}
+#btn:focus {
+    box-shadow:none;
+    outline: none;
+}
+
+#close {
+    box-shadow: none;
+    outline: none;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #666777;
+    font-weight: 500;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover ,.navbar-expand-lg .navbar-nav .nav-link.active{
+    color:rgb(153, 104, 199);
+}
+
+
+
+
+.container-children{
+    position: relative;
+    text-align: center;
+}
+#clothes{
+
+margin-top: 150px;
+margin-left: 50px;
+width:80%;
+}
+#Underwear{
+margin-top: 150px;
+margin-left: 50px;
+width:75%;
+
+}
+#Shoes{
+margin-top:70px;
+margin-left: 50px;
+width:70%;
+
+}
+#Accessorise{
+margin-top: 70px;
+margin-left: 50px;
+width:75%;
+
+}
+
+.bg-dark {
+    position: relative;
+
+}
+.card-title{
+    font-size: 30px;
+
+}
+.card-title:hover{
+    color: blueviolet;
+
+
+}
+#btn-Clothes{
+    background-color:rgb(121, 58, 180) ;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    border: none;
+
+}
+
+#btn-Clothes:hover{
+    background-color: blueviolet;
+}
+
+#btn-Underwear{
+    background-color:rgb(121, 58, 180) ;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    border: none;
+
+}
+
+#btn-Underwear:hover{
+    background-color: blueviolet;
+}
+
+#btn-Shoes{
+    background-color:rgb(121, 58, 180) ;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    border: none;
+
+}
+
+#btn-Shoes:hover{
+    background-color: blueviolet;
+}
+
+#btn-Accessorise{
+    background-color:rgb(121, 58, 180) ;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    border: none;
+
+}
+
+#btn-Accessorise:hover{
+    background-color: blueviolet;
+}
+
+
+
+
+
+.social{
+
+    margin: 0 5px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    left:40%;
+    top:100%;
+}
+
+
+
+
+.social .fa-facebook{
+    font-size:xx-large;
+
+    padding: 5px 8px;
+    border-radius: 50px;
+    color: blue;
+
+}
+.social .fa-twitter{
+    font-size:xx-large;
+    padding: 5px 4px;
+    border-radius: 50px;
+    color: cornflowerblue;
+
+
+
+}
+.social .fa-google-plus{
+
+    font-size:xx-large;
+    padding: 5px 4px;
+    border-radius: 50px;
+    color: rgb(238, 53, 53);
+
+
+}
+.social .fa-linkedin-in{
+    font-size:xx-large;
+
+    padding: 5px 6px;
+    border-radius: 50px;
+    color: rgb(44, 44, 247);
+
+}
+.social .fa-youtube{
+
+    font-size:xx-large;
+    padding: 5px 4px;
+    border-radius: 50px;
+    color: rgb(190, 11, 11);
+
+
+}
+
+

@@ -1,0 +1,235 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #08040e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    border: 2px solid #7429ec;
+    position: relative;
+    height: 444px;
+    animation: glow 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0px 0px 10px 1px #7429ec;
+    }
+    50% {
+      box-shadow: 0px 0px 20px 5px #7429ec;
+    }
+  }
+  
+  /* Form Styles */
+  .form-container {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .form-heading {
+    font-size: 1.5rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Shared Styles for Login and Signup Sections */
+  .section {
+    background: linear-gradient(
+      90deg,
+      rgba(29, 11, 57, 1) 0%,
+      rgba(61, 22, 122, 1) 35%,
+      rgba(97, 34, 198, 1) 100%
+    );
+    flex-direction: column;
+    position: relative;
+  }
+   img{
+      position: relative;
+      width: 500px;
+      height: 400px;
+      left:60px;
+  }
+  
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5px;
+    background: linear-gradient(to bottom, #3a196a, #6e27df);
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2;
+  }
+  
+  .login {
+    align-items: flex-end;
+    padding: 0 2rem 0 11rem;
+    text-align: right;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 60% 100%);
+  }
+  
+
+  
+  .login::before {
+    left: 0;
+    height: 32rem;
+    transform: rotate(-30deg);
+    transform-origin: top left;
+  }
+ 
+  /* Unified Animation for Both Directions */
+  /* Smooth Slide Animations */
+
+  .login-move {
+    animation: slideInReverse 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(16rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInReverse {
+    0% {
+      transform: translateX(-16rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Input Styles */
+  .input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-field {
+    border: none;
+    padding: 0.5rem 2rem 0.5rem 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+  }
+  
+  .input-field:focus {
+    outline: none;
+  }
+  
+  .input-field::placeholder {
+    color: transparent;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    color: white;
+    font-size: 12px;
+    pointer-events: none;
+    transition: transform 0.3s ease, font-size 0.3s ease,
+      color 0.3s ease;
+  }
+  
+  .input-field:focus ~ .input-label,
+  .input-field:not(:placeholder-shown) ~ .input-label {
+    transform: translateY(-1rem);
+    font-size: 10px;
+    color: white;
+  }
+  
+  /* Icon Styling */
+  .input-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 12px;
+    pointer-events: none;
+  }
+  
+  /* Button Styles */
+  .submit-button {
+    background-image: linear-gradient(
+      to right,
+      #541eab 0%,
+      #26a0da 51%,
+      #541eab 100% );
+    margin-bottom: 1rem;
+    padding: 12px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-position: right center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* Link Styles */
+  .link {
+    color: #6324c9;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 12px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: #7a32e6;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .login {
+      display: none;
+    }
+  
+    .container {
+      width: 25rem;
+    }
+  
+    .form-container {
+      width: 100%;
+      padding: 4rem 0rem;
+    }
+  }
